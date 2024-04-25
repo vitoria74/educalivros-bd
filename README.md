@@ -12,4 +12,4 @@ A EducaLivros é uma livraria online especializada em vender livros e material e
 - O sistema apresenta uma estrutura coerente e de fácil legibilidade para o possível desenvolvimento de futuras interações deste?
 
 ## Easter egg
-Ao finalizar a primeira compra, o cliente ganha frete grátis na próxima vez que comprar no EducaLivros.
+Ao pressionar o botão "Finalizar compra", o cliente ganha frete grátis na próxima vez que comprar no EducaLivros.
