@@ -21,8 +21,9 @@ A EducaLivros é uma livraria online especializada em vender livros e material e
 Ao pressionar o botão "Finalizar compra", o cliente ganha frete grátis na próxima vez que comprar no EducaLivros.
 
 ## MER - Modelo Entidade-Relacionamento
-![Captura de Tela (104)](https://github.com/vitoria74/educalivros-bd/assets/105817834/00cb2763-a8e8-4c8e-afc5-a6d2b0a3918d)
+![Captura de Tela (107)](https://github.com/vitoria74/educalivros-bd/assets/105817834/5b7c052a-87b2-4a81-8587-709a3bb1e4ca)
 
 ## Modelo lógico
-![Captura de Tela (105)](https://github.com/vitoria74/educalivros-bd/assets/105817834/1271eca7-3e25-4ab0-8729-568e52039a69)
+![Captura de Tela (108)](https://github.com/vitoria74/educalivros-bd/assets/105817834/ce10e924-0ac8-45e7-918f-e611f4d9255c)
+
 
