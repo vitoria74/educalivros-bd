@@ -1,5 +1,11 @@
 # Educalivros - banco de dados
-Projeto onde fizemos um modelo entidade-relacionamento, um modelo lógico e um código DML para uma Escola-Livraria online, chamada EducaLivros. 
+Projeto onde fizemos um modelo entidade-relacionamento, um modelo lógico e um código DML para uma Escola-Livraria online, chamada EducaLivros.
+
+## Alunos:
+- Vitória Moura Paiva
+- Luiz Cláudio Brito
+- Lucas Chaves
+- Gabriel Reis Batista
 
 ## Definição
 A EducaLivros é uma livraria online especializada em vender livros e material escolar, como bolsas e cadernos, para alunos, professores e clientes externos. Também oferecemos planos para os usuários que quiserem receber descontos em suas compras. Além disso, o site oferece a opção "Avaliação", onde os usuários podem avaliar os livros que leram, com notas e/ou comentários e ainda receber seus pedidos em casa, com a opção "Entrega".
@@ -13,3 +19,10 @@ A EducaLivros é uma livraria online especializada em vender livros e material e
 
 ## Easter egg
 Ao pressionar o botão "Finalizar compra", o cliente ganha frete grátis na próxima vez que comprar no EducaLivros.
+
+## MER - Modelo Entidade-Relacionamento
+![Captura de Tela (104)](https://github.com/vitoria74/educalivros-bd/assets/105817834/00cb2763-a8e8-4c8e-afc5-a6d2b0a3918d)
+
+## Modelo lógico
+![Captura de Tela (105)](https://github.com/vitoria74/educalivros-bd/assets/105817834/1271eca7-3e25-4ab0-8729-568e52039a69)
+
