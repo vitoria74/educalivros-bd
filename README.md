@@ -7,3 +7,6 @@ Projeto onde fizemos um modelo entidade-relacionamento, um modelo lógico e um c
 - O sistema tem uma estrutura eficiente?
 - A checagem de dados no sistema é de fácil execução?
 - O sistema apresenta uma estrutura coerente e de fácil legibilidade para o possível desenvolvimento de futuras interações deste?
+
+# Easter egg
+Ao finalizar a primeira compra, o cliente ganha frete grátis na próxima vez que comprar no EducaLivros.
