@@ -1,0 +1,188 @@
+/* Lógico_1: */
+
+CREATE TABLE Usuario (
+    Endereco VARCHAR,
+    CPF CHAR PRIMARY KEY,
+    fk_Avaliacao_ID CHAR
+);
+
+CREATE TABLE Professor (
+    Departamento VARCHAR,
+    _IP_Identificacao_do_professor CHAR,
+    Disciplina VARCHAR,
+    fk_Usuario_CPF CHAR,
+    PRIMARY KEY (_IP_Identificacao_do_professor, fk_Usuario_CPF)
+);
+
+CREATE TABLE Aluno (
+    Matricula CHAR,
+    _CR__coeficiente_de_rendimento FLOAT,
+    Faltas SMALLINT,
+    fk_Usuario_CPF CHAR,
+    PRIMARY KEY (Matricula, fk_Usuario_CPF)
+);
+
+CREATE TABLE Cliente_Externo_ (
+    fk_Usuario_CPF CHAR PRIMARY KEY
+);
+
+CREATE TABLE Livro (
+    Quant_Estoque SMALLINT,
+    ISBN CHAR,
+    Titulo VARCHAR,
+    fk_Produto_ID CHAR,
+    fk_Editora_Codigo CHAR,
+    fk_Editora_Nome VARCHAR,
+    fk_Editora_E_mail VARCHAR,
+    PRIMARY KEY (ISBN, fk_Produto_ID)
+);
+
+CREATE TABLE Entrega (
+    Frete FLOAT,
+    Status CHARACTER,
+    Endereco VARCHAR
+);
+
+CREATE TABLE Autor (
+    P_Nome VARCHAR,
+    S_Nome VARCHAR
+);
+
+CREATE TABLE Editora (
+    Codigo CHAR,
+    Nome VARCHAR,
+    Endereco VARCHAR,
+    E_mail VARCHAR,
+    PRIMARY KEY (Codigo, Nome, E_mail)
+);
+
+CREATE TABLE Categoria (
+    ID CHAR PRIMARY KEY,
+    Nome VARCHAR,
+    Descricao VARCHAR,
+    Numero_de_livros
+);
+
+CREATE TABLE Avaliacao (
+    ID CHAR PRIMARY KEY,
+    Tipo CHARACTER,
+    Data DATE,
+    Comentarios VARCHAR,
+    Nota FLOAT
+);
+
+CREATE TABLE Pedido (
+    Numero SMALLINT,
+    Data DATE,
+    status CHARACTER,
+    Cartao CHAR,
+    Dinheiro CHAR,
+    Valor FLOAT,
+    Produto VARCHAR,
+    fk_Usuario_CPF CHAR
+);
+
+CREATE TABLE Plano_Premium (
+    desconto FLOAT
+);
+
+CREATE TABLE Material_Escolar (
+    Caderno FLOAT,
+    Bolsa FLOAT,
+    fk_Produto_ID CHAR PRIMARY KEY
+);
+
+CREATE TABLE Produto (
+    ID CHAR PRIMARY KEY
+);
+
+CREATE TABLE escrito (
+    fk_Livro_ISBN CHAR,
+    fk_Livro_fk_Produto_ID CHAR
+);
+
+CREATE TABLE pertence (
+    fk_Categoria_ID CHAR,
+    fk_Livro_ISBN CHAR,
+    fk_Livro_fk_Produto_ID CHAR
+);
+
+CREATE TABLE recebe (
+    fk_Avaliacao_ID CHAR,
+    fk_Livro_ISBN CHAR,
+    fk_Livro_fk_Produto_ID CHAR
+);
+
+CREATE TABLE obtem (
+    fk_Produto_ID CHAR
+);
+ 
+ALTER TABLE Usuario ADD CONSTRAINT FK_Usuario_2
+    FOREIGN KEY (fk_Avaliacao_ID)
+    REFERENCES Avaliacao (ID)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE Professor ADD CONSTRAINT FK_Professor_2
+    FOREIGN KEY (fk_Usuario_CPF)
+    REFERENCES Usuario (CPF)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Aluno ADD CONSTRAINT FK_Aluno_2
+    FOREIGN KEY (fk_Usuario_CPF)
+    REFERENCES Usuario (CPF)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Cliente_Externo_ ADD CONSTRAINT FK_Cliente_Externo__2
+    FOREIGN KEY (fk_Usuario_CPF)
+    REFERENCES Usuario (CPF)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Livro ADD CONSTRAINT FK_Livro_2
+    FOREIGN KEY (fk_Produto_ID)
+    REFERENCES Produto (ID)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Livro ADD CONSTRAINT FK_Livro_3
+    FOREIGN KEY (fk_Editora_Codigo, fk_Editora_Nome, fk_Editora_E_mail)
+    REFERENCES Editora (Codigo, Nome, E_mail)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Pedido ADD CONSTRAINT FK_Pedido_1
+    FOREIGN KEY (fk_Usuario_CPF)
+    REFERENCES Usuario (CPF)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Material_Escolar ADD CONSTRAINT FK_Material_Escolar_2
+    FOREIGN KEY (fk_Produto_ID)
+    REFERENCES Produto (ID)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE escrito ADD CONSTRAINT FK_escrito_1
+    FOREIGN KEY (fk_Livro_ISBN, fk_Livro_fk_Produto_ID)
+    REFERENCES Livro (ISBN, fk_Produto_ID)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE pertence ADD CONSTRAINT FK_pertence_1
+    FOREIGN KEY (fk_Categoria_ID)
+    REFERENCES Categoria (ID)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE pertence ADD CONSTRAINT FK_pertence_2
+    FOREIGN KEY (fk_Livro_ISBN, fk_Livro_fk_Produto_ID)
+    REFERENCES Livro (ISBN, fk_Produto_ID)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE recebe ADD CONSTRAINT FK_recebe_1
+    FOREIGN KEY (fk_Avaliacao_ID)
+    REFERENCES Avaliacao (ID)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE recebe ADD CONSTRAINT FK_recebe_2
+    FOREIGN KEY (fk_Livro_ISBN, fk_Livro_fk_Produto_ID)
+    REFERENCES Livro (ISBN, fk_Produto_ID)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE obtem ADD CONSTRAINT FK_obtem_1
+    FOREIGN KEY (fk_Produto_ID)
+    REFERENCES Produto (ID)
+    ON DELETE RESTRICT;
