@@ -37,7 +37,7 @@ CREATE TABLE Livro (
 
 CREATE TABLE Entrega (
     Frete FLOAT,
-    Status CHARACTER,
+    Status VARCHAR,
     Endereco VARCHAR
 );
 
@@ -72,7 +72,7 @@ CREATE TABLE Avaliacao (
 CREATE TABLE Pedido (
     Numero SMALLINT,
     Data DATE,
-    status CHARACTER,
+    status VARCHAR,
     Cartao CHAR,
     Dinheiro CHAR,
     Valor FLOAT,
