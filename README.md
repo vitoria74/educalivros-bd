@@ -24,6 +24,17 @@ Ao pressionar o botão "Finalizar compra", o cliente ganha frete grátis na pró
 ![Captura de Tela (107)](https://github.com/vitoria74/educalivros-bd/assets/105817834/5b7c052a-87b2-4a81-8587-709a3bb1e4ca)
 
 ## Modelo lógico
-![Captura de Tela (108)](https://github.com/vitoria74/educalivros-bd/assets/105817834/ce10e924-0ac8-45e7-918f-e611f4d9255c)
+![Captura de Tela (112)](https://github.com/vitoria74/educalivros-bd/assets/105817834/75275aa1-b42d-471e-a4e9-0f95df34973c)
+
+## Tabelas
+Exemplo de visualização de tabelas com o uso do SELECT:
+
+![Captura de Tela (109)](https://github.com/vitoria74/educalivros-bd/assets/105817834/f2884151-cf9b-4f44-bd81-1af9ffb56c32)
+![Captura de Tela (110)](https://github.com/vitoria74/educalivros-bd/assets/105817834/3d69ac98-bb04-406c-af0a-32d5ed2f79cb)
+![Captura de Tela (111)](https://github.com/vitoria74/educalivros-bd/assets/105817834/af352b5e-138d-4914-a027-f8933712201b)
+
+
+
+
 
 
