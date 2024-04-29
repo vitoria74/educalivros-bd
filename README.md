@@ -18,7 +18,7 @@ A EducaLivros é uma livraria online especializada em vender livros e material e
 - O sistema apresenta uma estrutura coerente e de fácil legibilidade para o possível desenvolvimento de futuras interações deste?
 
 ## Easter egg
-Ao pressionar o botão "Finalizar compra", o cliente ganha frete grátis na próxima vez que comprar no EducaLivros.
+Ao assinar o Plano Premium, o usuário recebe desconto em todos os produtos do site EducaLivros.
 
 ## MER - Modelo Entidade-Relacionamento
 ![Captura de Tela (107)](https://github.com/vitoria74/educalivros-bd/assets/105817834/5b7c052a-87b2-4a81-8587-709a3bb1e4ca)
