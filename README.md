@@ -8,7 +8,7 @@ Projeto onde fizemos um modelo entidade-relacionamento, um modelo lógico e um c
 - Gabriel Reis Batista
 
 ## Definição
-A EducaLivros é uma livraria online especializada em vender livros e material escolar, como bolsas e cadernos, para alunos, professores e clientes externos. Também oferecemos planos para os usuários que quiserem receber descontos em suas compras. Além disso, o site oferece a opção "Avaliação", onde os usuários podem avaliar os livros que leram, com notas e/ou comentários e ainda receber seus pedidos em casa, com a opção "Entrega".
+A EducaLivros é uma livraria online especializada em vender livros e material escolar, como bolsas e cadernos, para alunos, professores e clientes externos. Também oferecemos planos para os usuários que quiserem receber descontos em suas compras. Além disso, o site oferece a opção "Avaliação", onde os usuários podem avaliar os produtos que compraram, com notas e/ou comentários e ainda receber seus pedidos em casa, com a opção "Entrega".
 
 ## Tomada de decisão
 - Qual categoria de livro vende mais?
