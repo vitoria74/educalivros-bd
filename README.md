@@ -11,11 +11,11 @@ Projeto onde fizemos um modelo entidade-relacionamento, um modelo lógico e um c
 A EducaLivros é uma livraria online especializada em vender livros e material escolar, como bolsas e cadernos, para alunos, professores e clientes externos. Também oferecemos planos para os usuários que quiserem receber descontos em suas compras. Além disso, o site oferece a opção "Avaliação", onde os usuários podem avaliar os livros que leram, com notas e/ou comentários e ainda receber seus pedidos em casa, com a opção "Entrega".
 
 ## Tomada de decisão
-- Como o sistema aplicado melhora a eficiência do gerenciamento de dados?
-- Como esse sistema melhora as interações dos clientes com a empresa?
-- O sistema tem uma estrutura eficiente?
-- A checagem de dados no sistema é de fácil execução?
-- O sistema apresenta uma estrutura coerente e de fácil legibilidade para o possível desenvolvimento de futuras interações deste?
+- Qual categoria de livro vende mais?
+- Qual tipo de material escolar vende mais? Bolsa ou caderno?
+- Qual autor vende mais?
+- Qual produto é o mais pedido?
+- Qual é o livro mais bem avaliado?
 
 ## Easter egg
 Ao assinar o Plano Premium, o usuário recebe desconto em todos os produtos do site EducaLivros.
