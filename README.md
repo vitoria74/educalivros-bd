@@ -34,6 +34,18 @@ Exemplo de visualização de tabelas com o uso do SELECT:
 ![Captura de Tela (111)](https://github.com/vitoria74/educalivros-bd/assets/105817834/af352b5e-138d-4914-a027-f8933712201b)
 
 
+Exemplo de visualização de tabelas com o uso do DELETE:
+![Cr](https://github.com/vitoria74/educalivros-bd/assets/99884688/8c3a047d-6a10-4bae-a0d1-49786c62b8f1) 
+![Cr2](https://github.com/vitoria74/educalivros-bd/assets/99884688/8c171ca1-af77-43c4-ba60-64dbc61225e5) 
+
+![Email](https://github.com/vitoria74/educalivros-bd/assets/99884688/1bd52801-4e84-4d10-9f28-8bfa5d2853f5)
+![Email2](https://github.com/vitoria74/educalivros-bd/assets/99884688/4b53dcc5-4d8c-47e8-87e9-54ef3721d3d1) 
+
+Exemplo de visualização de tabelas com o uso do UPDATE: 
+
+![UPDATE](https://github.com/vitoria74/educalivros-bd/assets/99884688/b21fc540-d919-4092-b24b-b8184e56ada3)
+![UPDATE2](https://github.com/vitoria74/educalivros-bd/assets/99884688/99e7aad8-8ee7-4543-a241-436b124d1dab)
+
 
 
 
