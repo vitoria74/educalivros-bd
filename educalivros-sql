@@ -1,7 +1,9 @@
+/* Lógico_1: */
+
 CREATE TABLE Usuario (
     Endereco VARCHAR,
     CPF CHAR PRIMARY KEY,
-    fk_Avaliacao_ID CHAR
+    fk_Plano_Premium_CPF CHAR
 );
 
 CREATE TABLE Professor (
@@ -21,7 +23,9 @@ CREATE TABLE Aluno (
 );
 
 CREATE TABLE Cliente_Externo_ (
-    fk_Usuario_CPF CHAR PRIMARY KEY
+    E_mail VARCHAR,
+    fk_Usuario_CPF CHAR,
+    PRIMARY KEY (E_mail, fk_Usuario_CPF)
 );
 
 CREATE TABLE Livro (
@@ -38,7 +42,9 @@ CREATE TABLE Livro (
 CREATE TABLE Entrega (
     Frete FLOAT,
     Status VARCHAR,
-    Endereco VARCHAR
+    Endereco VARCHAR,
+    Numero SMALLINT PRIMARY KEY,
+    fk_Pedido_Numero SMALLINT
 );
 
 CREATE TABLE Autor (
@@ -58,7 +64,7 @@ CREATE TABLE Categoria (
     ID CHAR PRIMARY KEY,
     Nome VARCHAR,
     Descricao VARCHAR,
-    Numero_de_livros
+    Numero_de_livros SMALLINT
 );
 
 CREATE TABLE Avaliacao (
@@ -70,28 +76,37 @@ CREATE TABLE Avaliacao (
 );
 
 CREATE TABLE Pedido (
-    Numero SMALLINT,
     Data DATE,
     status VARCHAR,
     Cartao CHAR,
     Dinheiro CHAR,
     Valor FLOAT,
     Produto VARCHAR,
+    Numero SMALLINT PRIMARY KEY,
     fk_Usuario_CPF CHAR
 );
 
 CREATE TABLE Plano_Premium (
-    desconto FLOAT
+    desconto FLOAT,
+    CPF CHAR PRIMARY KEY
 );
 
 CREATE TABLE Material_Escolar (
     Caderno FLOAT,
     Bolsa FLOAT,
-    fk_Produto_ID CHAR PRIMARY KEY
+    Codigo_Barra CHAR,
+    fk_Produto_ID CHAR,
+    PRIMARY KEY (Codigo_Barra, fk_Produto_ID)
 );
 
 CREATE TABLE Produto (
-    ID CHAR PRIMARY KEY
+    ID CHAR PRIMARY KEY,
+    Nome VARCHAR
+);
+
+CREATE TABLE faz (
+    fk_Avaliacao_ID CHAR,
+    fk_Usuario_CPF CHAR
 );
 
 CREATE TABLE escrito (
@@ -105,15 +120,17 @@ CREATE TABLE pertence (
     fk_Livro_fk_Produto_ID CHAR
 );
 
-CREATE TABLE recebe (
-    fk_Avaliacao_ID CHAR,
-    fk_Livro_ISBN CHAR,
-    fk_Livro_fk_Produto_ID CHAR
+CREATE TABLE obtem (
+    fk_Produto_ID CHAR,
+    fk_Pedido_Numero SMALLINT
 );
 
-CREATE TABLE obtem (
+CREATE TABLE recebe (
+    fk_Avaliacao_ID CHAR,
     fk_Produto_ID CHAR
 );
+ 
+
 INSERT INTO Usuario (Endereco, CPF, fk_Avaliacao_ID) VALUES
 ('Rua A, 123', '12345678901', 'AVL001'),
 ('Avenida B, 456', '98765432109', 'AVL002'),
@@ -234,4 +251,14 @@ INSERT INTO obtem (fk_Produto_ID) VALUES
 ('PRO002'),
 ('PRO003'),
 ('PRO004'),
-('PRO005');
+('PRO005'); 
+
+Delete from Pedido where status like'%Pendente%';  
+
+Update Autor set P_Nome='George' where P_Nome like '%Georgeton%'; 
+Update Autor set P_Nome='Hermando' where P_Nome like '%Herman%';  
+Update Autor set P_Nome='Michael' where P_Nome like '%Miguel%';  
+
+Delete from Livro where fk_Editora_E_mail like '%gmail%'; 
+
+Delete from Aluno where _CR__coeficiente_de_rendimento<7;
