@@ -21,10 +21,12 @@ A EducaLivros é uma livraria online especializada em vender livros e material e
 Ao assinar o Plano Premium, o usuário recebe desconto em todos os produtos do site EducaLivros.
 
 ## MER - Modelo Entidade-Relacionamento
-![Captura de Tela (107)](https://github.com/vitoria74/educalivros-bd/assets/105817834/5b7c052a-87b2-4a81-8587-709a3bb1e4ca)
+![Mer](https://github.com/vitoria74/educalivros-bd/assets/99884688/3bf5b231-9a03-4540-9e0a-bd53f5781538)
+
 
 ## Modelo lógico
-![Captura de Tela (112)](https://github.com/vitoria74/educalivros-bd/assets/105817834/75275aa1-b42d-471e-a4e9-0f95df34973c)
+![Logi](https://github.com/vitoria74/educalivros-bd/assets/99884688/fc92b804-644e-4324-8fd7-d6c85fcd1b98)
+
 
 ## Tabelas
 Exemplo de visualização de tabelas com o uso do SELECT:
