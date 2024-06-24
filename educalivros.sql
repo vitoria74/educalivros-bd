@@ -1,5 +1,3 @@
-/* Lógico_1: */
-
 CREATE TABLE Usuario (
     Endereco VARCHAR,
     CPF CHAR PRIMARY KEY,
